@@ -1,0 +1,1 @@
+Let X and Y be two arrays of n numbers each, both already sorted. Give a O(logn) algorithm to compute the median of XUY.

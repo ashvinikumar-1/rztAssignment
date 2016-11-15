@@ -1,0 +1,4 @@
+#!/bin/bash
+ps -ef>newf
+awk '{print $2}' newf >pid
+cat pid

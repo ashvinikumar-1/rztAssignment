@@ -1,0 +1,25 @@
+Pseudocode:
+case 1: number not in sorted order 
+
+Step 1: Take n inputs store in  array S (size of set S containing n real numbers)
+Step 2: Take input x  (sum of two elements of S is x?)
+step 3: using merge sort, sort number in increasing order 
+step 4: call findpair(arr[], size, sum) 
+      findpair(arr[], size, sum)
+      initialize l=0; r=size-1;
+      while(l<r){
+      if(arr[l]+arr[r]==sum) return 1;
+      else if((arr[l]+arr[r])<sum) l++;
+      else r--;
+      }
+      return 0; 
+step 5:
+       if, findpair(arr[],size,sum) return 0, pair not present
+           else pair present
+*********************************************************
+Case 2: numbers in sorted order
+ 
+Step 1: Initialize  boolean[] isPresent =new isPresent[1000000]; to false
+Step 2: for each element arr[i] in arr[]
+   (a)	If (sum-arr[i])>0 && isPresent[x - arr[i]] is true then print the pair (arr[i], x - arr[i])
+   (b)	else set isPresent[arr[i]]

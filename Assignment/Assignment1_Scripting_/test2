@@ -1,0 +1,5 @@
+#!/bin/bash
+# 1=path 2=file
+x=$1
+y=$2
+[ -f $x/$y ] && rm $x/$y || tar cvfz archive.tar  $x

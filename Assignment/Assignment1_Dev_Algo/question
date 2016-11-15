@@ -1,0 +1,1 @@
+The input is a set S containing n real numbers, and a real number x. Design an algorithm to determine whether there are two elements of S whose sum is exactly x. The algorithm should run in O(n log n) time. Suppose now that the set S is given in a sorted order. Design an algorithm to solve the above problem in time O(n).

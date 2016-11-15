@@ -1,0 +1,26 @@
+#!/bin/bash
+#f3 contain file name without space
+a=$1
+m=$2
+p=$(pwd)
+ls  -RlSr $a >/home/ashvinikumar/fclone/new/f.txt
+b=/home/ashvinikumar/fclone/new/f.txt
+awk '{print $5,$9 }' $b  >f2
+#grep -v '^$' f2 > f3
+sort -k1,1nr -k2,2 f2 > f3
+#remove_emputy_line
+grep "^[0-9]" f3 > f4 
+#file_name_with_size
+cat f4
+awk '{print $2}' f4 >f5
+c=f4
+#only_sorted_file_name
+cat f4
+awk '$1==0' f4 > zsize
+echo "zero_size_file_here"
+cat zsize
+awk '{print $2}' zsize > zsize1
+awk '{print}' zsize1       
+find $a  -type f -size 0 -exec rm -i {} \;
+[ -f "$p/$m" ] && mv "$p/$m" razorthink_$(echo "$p" | sed -r 's/[/]+/-/g')
+

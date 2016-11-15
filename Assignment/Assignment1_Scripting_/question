@@ -1,0 +1,4 @@
+@Cadets: Following are the assessment Questions which you guys needs to be completed by  tomorrow.
+1.Write a Shell Script to create a folder with timestamp as folder name and move a file 'test' from /tmp to the newly created folder.
+2.Write a Shell Script to accept a filename and path(dir path) as command line argument and find wheater the file is present in the given path. If it is present , it should delete the file otherwise it should archive the given directory.
+3.Write a Shell Script to store all the PID's of running processes in the server to a file.

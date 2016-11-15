@@ -1,0 +1,8 @@
+1. Separate user in every server with limited sudo privileges. User will be having permission to execute only a few commands by escalating as sudo user.  
+Create a password less user named razorthink having sudo privilege to execute only:  
+sudo netstat -tulnp   
+sudo ps -ef   
+sudo df -h   
+sudo fdisk -l  
+2. Setting up cron jobs for security auditing using tiger (open source tool for performing security auditing). The cron job should send audit report after every alternate days. 
+3. Performing initial security auditing using lynis (open source tool for security auditing). Fix the necessary security risks in the system and perform the auditing again to increase the security index of the server.
